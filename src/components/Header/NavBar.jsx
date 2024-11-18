@@ -3,7 +3,7 @@ import iconHamburger from "../../images/icon-hamburger.svg";
 import iconClose from "../../images/icon-close.svg";
 function NavBar({ onClick, isOpenMenu }) {
   return (
-    <nav className="flex items-center justify-between px-4 pb-[167px] pt-11 lg:pb-[133px] lg:pt-16 xl:px-0">
+    <nav className="relative z-20 mx-auto flex max-w-[1110px] items-center justify-between px-4 pb-[167px] pt-11 lg:pb-[133px] lg:pt-16 xl:px-0">
       {/* logo */}
       <img src={logo} alt="logo" className="w-[144px] lg:w-[192px]" />
       {/* logo */}
@@ -16,7 +16,7 @@ function NavBar({ onClick, isOpenMenu }) {
         onClick={onClick}
       />
       <ul
-        className={`${isOpenMenu ? "flex" : "hidden"} absolute top-1/2 h-full -translate-y-1/2 flex-col gap-6 font-josefin text-2xl font-light uppercase leading-[25px]`}
+        className={`${isOpenMenu ? "flex" : "hidden"} absolute top-0 h-[650px] flex-col justify-center gap-6 font-josefin text-2xl font-light uppercase leading-[25px]`}
       >
         <li>
           <a href="#">About</a>
@@ -39,19 +39,34 @@ function NavBar({ onClick, isOpenMenu }) {
       {/* menu desktop */}
       <ul className="hidden items-center gap-8 font-alata text-[15px] leading-[25px] lg:flex">
         <li>
-          <a href="#">About</a>
+          <a href="#" className="group transition-all">
+            About
+            <span className="mx-auto hidden h-[2px] w-6 bg-white transition-all group-hover:block"></span>
+          </a>
         </li>
         <li>
-          <a href="#">Career</a>
+          <a href="#" className="group transition-all">
+            Career
+            <span className="mx-auto hidden h-[2px] w-6 bg-white transition-all group-hover:block"></span>
+          </a>
         </li>
         <li>
-          <a href="#">Events</a>
+          <a href="#" className="group transition-all">
+            Events
+            <span className="mx-auto hidden h-[2px] w-6 bg-white transition-all group-hover:block"></span>
+          </a>
         </li>
         <li>
-          <a href="#">Products</a>
+          <a href="#" className="group transition-all">
+            Products
+            <span className="mx-auto hidden h-[2px] w-6 bg-white transition-all group-hover:block"></span>
+          </a>
         </li>
         <li>
-          <a href="#">Support</a>
+          <a href="#" className="group transition-all">
+            Support
+            <span className="mx-auto hidden h-[2px] w-6 bg-white transition-all group-hover:block"></span>
+          </a>
         </li>
       </ul>
       {/* menu desktop */}
