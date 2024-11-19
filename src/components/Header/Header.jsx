@@ -27,7 +27,7 @@ function Header() {
         <div
           className={`${isOpenMenu ? "z-0" : ""} relative mx-6 max-w-[650px] border-2 border-white p-6 font-josefin text-[40px] font-light uppercase leading-[38px] lg:p-10 lg:text-[72px] lg:leading-[70px] xl:mx-0`}
         >
-          Immersive experiences that deliver
+          <h1>Immersive experiences that deliver</h1>
         </div>
       </section>
       {/* content */}
