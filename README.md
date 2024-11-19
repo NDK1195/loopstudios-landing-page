@@ -8,8 +8,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/intro-component-with-signup-form)
-- Live Site URL: [Live site URL here](https://intro-component-with-signup-form-blue-tau.vercel.app/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/loopstudios-landing-page)
+- Live Site URL: [Live site URL here](https://loopstudios-landing-page-flame-iota.vercel.app/)
 
 ### Built with
 
